@@ -1,0 +1,38 @@
+    <style>
+
+      .bar-stable {
+        background-color: #AE77AD !important;
+        border: 0 !important;
+      }
+
+      .title {
+        color: #fff !important;
+        text-align: center !important;
+      }
+
+      .button {
+        color: #fff !important;
+      }
+      h2{
+        color:#AE77AD;
+      }
+      
+      ion-content{
+        padding:4%;
+      }
+
+    </style>
+<ion-modal-view>
+  <ion-header-bar class="bar-stable" >
+    <h1 class="title">Detalhes da Dica</h1>
+    <button class="button button-clear icon-small button-small button-icon ion-close" ng-click="fechaModal()"></button>
+    </ion-header-bar>
+      <ion-content>
+        <div ng-repeat="dic in dicas">
+          
+          <h2 >{{dic.nm_titulo_dica}}</h2>
+          
+          <h3>{{dic.ds_conteudo_dica}}</h3>
+        </div>
+      </ion-content>
+</ion-modal-view>

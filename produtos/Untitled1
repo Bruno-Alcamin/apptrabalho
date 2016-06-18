@@ -1,0 +1,32 @@
+	<li>
+					<div class="imagem">
+						<img src="img/img2.jpg" />
+					</div>
+
+					<div class="descricao">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p><span>Benefícios:</span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="imagem">
+						<img src="img/img-Produto3.jpg" />
+					</div>
+
+					<div class="descricao">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p><span>Benefícios:</span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="imagem">
+						<img src="img/img-Produto4.jpg" />
+					</div>
+
+					<div class="descricao">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p><span>Benefícios:</span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</li>

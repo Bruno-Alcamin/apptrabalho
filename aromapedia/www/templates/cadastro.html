@@ -1,0 +1,41 @@
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+
+<ion-view view-title="Cadastro">
+  <ion-content>
+    <form name="formCadastro">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Nome</span>
+        <input type="text" placeholder="Nome" name="nome" ng-model='model.nome' ng-required="true">
+        <span class="assertive" ng-show="formCadastro.nome.$invalid && formCadastro.nome.$dirty">Preencha o campo corretamente!</span>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Endereço</span>
+        <input type="text" placeholder="Endereço" name="Endereco" ng-model='model.endereco'>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Email" name="email" ng-model='model.email' ng-required="true">
+        <span class="assertive" ng-show="formCadastro.email.$invalid && formCadastro.email.$dirty">Preencha o campo corretamente!</span>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Senha</span>
+        <input type="password" placeholder="Senha" name="senha" ng-model='model.senha' ng-required="true">
+        <span class="assertive" ng-show="formCadastro.senha.$invalid && formCadastro.senha.$dirty">Preencha o campo corretamente!</span>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Telefone</span>
+        <input type="number" placeholder="Telefone" ng-model='model.telefone'>
+      </label><label class="item item-input item-floating-label">
+        <span class="input-label">Celular</span>
+        <input type="number" placeholder="Celular" ng-model='model.celular' ng-required="true">
+        <span class="assertive" ng-show="formCadastro.celular.$invalid && formCadastro.celular.$dirty">Preencha o campo corretamente!</span>
+      </label>
+      </form>
+      <button class="button button-block button-royal" ng-disabled="formCadastro.$invalid"  ng-click="cadastro()">
+            Cadastrar
+      </button>
+  </div>
+  </ion-content>
+  
+</ion-view>

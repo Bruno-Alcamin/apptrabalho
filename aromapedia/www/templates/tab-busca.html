@@ -1,0 +1,110 @@
+<style>
+
+	#Conteudo {
+		float: left;
+		width: 100%;
+	}
+
+	#Conteudo #MeioConteudo {
+		max-width: 500px;
+		margin: auto;
+	}
+
+	#Conteudo #MeioConteudo #Busca {
+		float: left;
+		width: 100%;
+		padding: 10px 4px;
+	}
+
+	#Conteudo #MeioConteudo #Busca input.campo {
+		float: left;
+		width: 70%;
+		border: 1px solid #ccc;
+		padding: 4px;
+	}
+
+	#Conteudo #MeioConteudo #Busca input.buscar {
+		float: right;
+		width: 30%;
+		background-color: #AE77AD;
+		color: #fff;
+		border: 0;
+		display: block;
+		height: 34px;
+	}
+
+	ul.listaProdutos {
+		float: left;
+		width: 100%;
+		padding: 4px;
+	}
+
+	ul.listaProdutos li {
+		float: left;
+		margin: 4px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		width: 46%;
+		padding: 6px;
+	}
+
+	ul.listaProdutos li .imagem {
+		max-width: 249px;
+		margin: auto;
+		border: 1px solid #ccc;
+	}
+
+	ul.listaProdutos li .imagem img {
+		width: 100%;
+	}
+
+	ul.listaProdutos li .descricao {
+		float: left;
+		width: 100%;
+	}
+
+	ul.listaProdutos li .descricao p {
+		color: #AD77AC;
+		text-align: center;
+	}
+
+	ul.listaProdutos li .descricao p span {
+		font-weight: bold;
+	} 
+
+</style>
+
+
+<ion-view view-title="Busca por Óleos">
+  <ion-content>
+    
+	<div id="Conteudo">
+		<div id="MeioConteudo">
+		
+			<div id="Busca">
+				<form name="formpesq" >
+				<input type="text" class="campo" placeholder="Digite o óleo que procura" ng-model="pesq.chave" ng-required="true" />
+				</form>
+				<input type="submit" class="buscar" value="Buscar" ng-disabled="formpesq.$invalid" ng-click="pesquisa()" />
+			</div>
+			<div class="row">
+				<button class="button button-block  button-royal" id="btn-pesq" ng-click="getAll()">
+				  Veja todos os óleos!
+				</button>
+			</div>
+			<ul class="listaProdutos">
+				<li ng-repeat="items in lista track by $index">
+					<div class="imagem">
+						<img ng-src="https://aromapedia-bruno-alcamin.c9users.io/Imagens/produtos/{{items.ds_foto_oleo}}" />
+					</div>
+					<div class="descricao">
+						<p>{{items.nm_oleo}}</p>
+						<p><span>Benefícios: </span>{{items.beneficio}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>  	
+
+  </ion-content>
+</ion-view>

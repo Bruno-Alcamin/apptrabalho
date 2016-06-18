@@ -1,0 +1,49 @@
+ionic serve -p $PORT --nolivereload
+
+https://docs.c9.io/docs/ionic
+
+https://appionic-bruno-alcamin.c9users.io/App/www/#/page1
+
+https://creator.ionic.io/app/designer/eb4c31a8d25c#zip
+
+https://www.youtube.com/watch?v=R1t__zRuR2Y
+
+ http://tableless.com.br/tutorial-ionic-meu-primeiro-app/
+ 
+ chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
+ //Iniciando mysql
+//mysql-ctl start
+
+//phpmyadmin-ctl install
+
+//USUARIO = bruno_alcamin
+
+https://www.youtube.com/watch?v=G5GU_x6eHz0&list=PLpP8rO2FXVXTJRTJ2j6rYLKQrQC1XgIra&index=14
+
+
+criando novo projeto
+
+
+ionic start myApp sidemenu
+
+ionic platform add android
+
+
+RUN
+
+ionic run android --device
+
+http://blog.thiagobelem.net/armazenando-informacoes-no-computador-do-visitante-com-localstorage-e-sessionstorage
+
+
+
+https://www.youtube.com/watch?v=7vxFON227Wc
+
+
+https://www.youtube.com/watch?v=cYM5_kp0gMw
+
+
+IMPORTANTE
+
+https://www.youtube.com/watch?v=YCv6QLvpxkA

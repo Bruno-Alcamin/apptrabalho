@@ -1,0 +1,32 @@
+<style>
+  .btn{
+    position:fixed;
+    top:80%;
+    left:70%;
+    z-index:9999999;
+    color:#AE77AD;
+    border-radius:50%;
+  }
+  
+  .txtDica{
+   color:#AE77AD;
+   font-weight:bold;
+   font-size:18px;
+  }
+  
+</style>
+<ion-view view-title="Dicas">
+<button class="button button-large button-royal ion-ios-shuffle-strong btn" ng-click="btnAleatorio()">
+</button>
+  <ion-content>
+    <ion-list ng-repeat="items in lista track by $index">
+          <ion-item ng-click="detalhesDica(items.cd_dicas); abreModal()">
+            <div class="row">
+              <div class="col col-75 txtDica">
+                  {{items.nm_titulo_dica}}
+              </div>
+            </div>    
+          </ion-item>  
+    </ion-list>  
+  </ion-content>
+</ion-view>

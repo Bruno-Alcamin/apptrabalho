@@ -1,0 +1,19 @@
+SELECT LENDARIO
+
+
+select O.*, GROUP_CONCAT(B.nm_beneficio) as beneficio
+	from beneficio as B 
+	Inner join oleo_beneficio as OB 
+	on B.cd_beneficio = OB.cd_beneficio
+	right Join oleo as O
+	on O.cd_oleo = OB.cd_oleo
+	group by O.cd_oleo
+	
+	
+	"select O.*, GROUP_CONCAT(B.nm_beneficio) as beneficio
+                                	from beneficio as B 
+                                	inner join oleo_beneficio as OB 
+                                	on B.cd_beneficio = OB.cd_beneficio
+                                	right Join (select * from oleo where nm_oleo like '%".$chave."%') as O
+                                	on O.cd_oleo = OB.cd_oleo  
+                                	group by O.cd_oleo "

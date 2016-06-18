@@ -1,0 +1,41 @@
+<style>
+
+
+	ul.listaPatrocinio {
+		float: left;
+		width: 100%;
+		padding: 4px;
+	}
+
+	ul.listaPatrocinio li {
+		float: left;
+		background-color: #fff;
+		
+		width: 100%;
+	padding: 20px;
+	}
+
+	ul.listaPatrocinio li .imagemPat {
+		max-width: 249px;
+		margin-left:auto;
+	  margin-right:auto;
+	}
+
+	ul.listaPatrocinio li .imagemPat img {
+		width: 100%;
+	}
+
+
+</style>
+
+<ion-view view-title="Patrocinadores">
+  <ion-content>
+    <ul class="listaPatrocinio">
+				<li ng-repeat="items in lista">
+					<div class="imagemPat">
+						<img ng-src="https://aromapedia-bruno-alcamin.c9users.io/Imagens/patrocinadores/{{items.ds_imagem_patrocinador}}" />
+					</div>  
+				</li>
+    </ul>
+  </ion-content>
+</ion-view>

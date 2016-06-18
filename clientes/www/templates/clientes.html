@@ -1,0 +1,44 @@
+<ion-view title="Clientes" id="page1" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h1 id="clientes-heading1" style="color:#000000;" class=" ">Agenda Telefonica</h1>
+        <div class="row">
+          <div class="col">
+              <button class="button button-block button-positive" ng-click="onItemAdd()">Add</button>
+          </div>
+          <div class="col">
+            <button class="button button-block button-energized" ng-click="listar()">{{textoList}}</button>
+          </div>
+          <div class="col">
+               <button class="button button-block button-assertive" ng-click="onClickRemove()">Remove</button>
+          </div>
+        </div>
+        <form id="clientes-form1" class="list ">
+            <label class="item item-input " id="clientes-input1" >
+                <input type="text" placeholder="nome do clietne" ng-model='model.nome'>
+            </label>
+            <label class="item item-input " id="clientes-input2" >
+                <input type="number" placeholder="telefone do cliente" ng-model='model.telefone'>
+            </label>
+        </form>
+        
+          <p id="clientes-markdown1" style="margin-top:0px;color:#000000;" class=" ">Contatos</p>
+
+          <ion-list show-delete="removeStatus">
+          <ion-item ng-repeat="items in lista track by $index" >
+            <div class="row">
+              <div class="col col-90">
+                <div class="col">
+                  {{items.nm_Cliente}}
+                </div>
+                <div class="col">
+                  {{items.cd_TelefoneCliente}}
+                </div>
+
+                  <ion-delete-button class="ion-minus-circled" ng-click="onItemRemove(items);lista.splice($index, 1)"></ion-delete-button>
+                  <ion-option-button class="button-positive" ng-click="onItemEdit(items)">Edit</ion-option-button>
+              </div> 
+            </div>
+          </ion-item>
+          </ion-list>        
+    </ion-content>
+</ion-view>
